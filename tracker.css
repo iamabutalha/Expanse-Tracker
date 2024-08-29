@@ -204,3 +204,245 @@ select {
 
 
 
+/* GitHub Button Styles */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.github-btn {
+    display: inline-block;
+    background-color: #24292e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: #444d56;
+    transform: translateY(-3px);
+}
+
+.github-btn:active {
+    background-color: #24292e;
+    transform: translateY(0);
+}
+
+@media (max-width: 400px) {
+    .github-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Development Mode Banner Styles */
+.dev-mode-banner {
+    background-color: #FFD700; /* Golden background */
+    color: #333333;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* GitHub Button Styles */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.github-btn {
+    display: inline-block;
+    background-color: #24292e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: #444d56;
+    transform: translateY(-3px);
+}
+
+.github-btn:active {
+    background-color: #24292e;
+    transform: translateY(0);
+}
+
+@media (max-width: 400px) {
+    .github-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.development-mode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #DAA520; /* Updated to a more attractive gold color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: 60px auto 0; /* Adjusted margin to account for the fixed banner */
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="decimal"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.transactions-container {
+    margin-top: 20px;
+}
+
+.transaction {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.transaction.income {
+    border-color: #4CAF50;
+}
+
+.transaction.expense {
+    border-color: #f44336;
+}
+
+.transaction:hover {
+    background-color: #e0e0e0;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.total h2 {
+    color: #333333;
+    font-size: 20px;
+}
+
+.github-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-github {
+    background-color: #24292e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.btn-github:hover {
+    background-color: #444d56;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
