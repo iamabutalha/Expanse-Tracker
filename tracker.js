@@ -32,14 +32,11 @@ document.querySelector("#expense-form").addEventListener("submit", (event) => {
 
   // Take name from the input field
   let name = document.querySelector("#description").value;
-  console.log(name);
   // Take amount from the amount field and stiree it in a variable
   let amount = parseFloat(document.querySelector("#amount").value);
-  console.log(amount);
 
   // Take type from the select field
   let type = document.querySelector("#type").value;
-  console.log(type);
 
   if (isNaN(amount)) {
     document.querySelector(".error-message").innerHTML = "Enter a valid amount";
@@ -62,8 +59,6 @@ document.querySelector("#expense-form").addEventListener("submit", (event) => {
 
 renderExpanses();
 totalAmount();
-
-console.log(expanses);
 
 function saveToStorage() {
   localStorage.setItem("expanses", JSON.stringify(expanses));
