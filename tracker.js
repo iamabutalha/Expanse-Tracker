@@ -74,6 +74,31 @@ function totalAmount() {
     }
   });
 
+  // these lines of code are for the color of the total amount if Total amount is greater than 0 it will change the color of the totalAmount to green and Red if it is less than 0 and green if it is equal to zero
+  if (totalAmount > 0) {
+    document
+      .querySelector("#total-balance")
+      .classList.add("total-positive-balance");
+  } else if (totalAmount < 0) {
+    if (
+      document
+        .querySelector("#total-balance")
+        .classList.contains("total-positive-balance")
+    ) {
+      document
+        .querySelector("#total-balance")
+        .classList.remove("total-positive-balance");
+    }
+
+    document
+      .querySelector("#total-balance")
+      .classList.add("total-negative-balance");
+  } else {
+    document
+      .querySelector("#total-balance")
+      .classList.add("total-positive-balance");
+  }
+
   document.querySelector("#total-balance").innerHTML = ` $${totalAmount.toFixed(
     1
   )}`;
